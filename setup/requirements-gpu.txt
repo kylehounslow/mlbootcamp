@@ -1,0 +1,17 @@
+ipython
+jupyter
+ipyleaflet
+scrapy
+pandas
+scikit-learn
+geopy
+folium
+matplotlib
+seaborn
+geojson
+tqdm
+tf-nightly-gpu
+flask
+flask-restplus
+requests
+jsonpickle

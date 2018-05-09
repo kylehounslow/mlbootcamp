@@ -1,0 +1,4 @@
+ARG USE_GPU=false
+#RUN if [ "x$USE_GPU" = 0 ] ; then echo Argument not provided ; else echo Argument is $USE_GPU ; fi
+ARG IMAGE_NAME=USE_GPU
+FROM ubuntu:16.04
