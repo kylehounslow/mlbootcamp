@@ -15,4 +15,5 @@ flask
 flask-restplus
 requests
 jsonpickle
+unicodecsv
 
