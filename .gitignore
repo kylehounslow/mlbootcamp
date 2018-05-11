@@ -98,3 +98,5 @@ ENV/
 .mypy_cache/
 
 .idea
+.local
+.ipython

@@ -6,9 +6,8 @@ services:
      - "$API_PORT:$API_PORT"
      - "$JUPYTER_PORT:$JUPYTER_PORT"
     volumes:
-     - $PWD:/home/ml
-    #entrypoint: /bin/bash 
-    command: /usr/local/bin/jupyter-notebook  --no-browser --port=$JUPYTER_PORT --ip=0.0.0.0 --allow-root
+     - "${PROJECT_DIR}:/home/ml"
+    command: /usr/local/bin/jupyter-notebook  --no-browser --port=8888 --ip=0.0.0.0 --allow-root --NotebookApp.token= --NotebookApp.password=
     environment:
      - API_PORT=$API_PORT
 

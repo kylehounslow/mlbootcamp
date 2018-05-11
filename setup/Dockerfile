@@ -48,6 +48,10 @@ ENV PYTHONPATH=/home/ml
 # flask env setup
 EXPOSE 5000
 
+# create user with same UID as host (typically uid=1000, gid=100)
+RUN useradd -r -u 1000 -g 100 ml
+USER ml
+
 # start jupyter on docker run
 CMD /usr/local/bin/jupyter-notebook \
 --no-browser \
@@ -56,4 +60,6 @@ CMD /usr/local/bin/jupyter-notebook \
 --allow-root
 
 WORKDIR /home/ml
+
+
 
